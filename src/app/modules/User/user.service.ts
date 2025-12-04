@@ -39,7 +39,7 @@ const getStatistics = async (): Promise<{
   const totalServiceProviders = await User.countDocuments({
     role: 'SERVICE_PROVIDER',
   });
-  const totalCustomers = await User.countDocuments({ role: 'CUSTOMER' });
+  const totalCustomers = await User.countDocuments({ role: 'USER' });
 
   const categories = await User.distinct('profession', {
     role: 'SERVICE_PROVIDER',

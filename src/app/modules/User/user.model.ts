@@ -7,7 +7,7 @@ const UserSchema = new Schema(
     phone: { type: String, unique: true, required: true },
     role: {
       type: String,
-      enum: ['SUPER_ADMIN', 'ADMIN', 'USER', 'TRAINER'],
+      enum: ['SUPER_ADMIN', 'ADMIN', 'USER', 'SERVICE_PROVIDER'],
       required: true,
       default: 'USER',
     },

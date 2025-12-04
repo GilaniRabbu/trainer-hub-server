@@ -5,7 +5,7 @@ export interface IUser extends Document {
   email: string;
   phone: string;
   userStatus: 'ACTIVE' | 'INACTIVE' | 'BLOCKED' | 'PENDING' | 'DELETED';
-  role: 'SUPER_ADMIN' | 'ADMIN' | 'USER' | 'CUSTOMER' | 'DINMAJUR';
+  role: 'SUPER_ADMIN' | 'ADMIN' | 'USER' | 'SERVICE_PROVIDER';
   password: string;
   isEmailVerified: boolean;
   isPhoneVerified: boolean;

@@ -3,7 +3,7 @@ import { z } from 'zod';
 export const createUserValidation = z
   .object({
     phone: z.string().min(1, 'Phone is required'),
-    role: z.enum(['SUPER_ADMIN', 'ADMIN', 'USER', 'CUSTOMER', 'DINMAJUR'], {
+    role: z.enum(['SUPER_ADMIN', 'ADMIN', 'USER', 'SERVICE_PROVIDER'], {
       errorMap: () => ({ message: 'Required role is missing' }),
     }),
     username: z.string().optional(),
@@ -37,7 +37,7 @@ export const updateUserValidation = z
   .object({
     phone: z.string().optional(),
     role: z
-      .enum(['SUPER_ADMIN', 'ADMIN', 'USER', 'CUSTOMER', 'DINMAJUR'])
+      .enum(['SUPER_ADMIN', 'ADMIN', 'USER', 'SERVICE_PROVIDER'])
       .optional(),
     username: z.string().optional(),
     email: z.string().email('Invalid email format').optional(),
