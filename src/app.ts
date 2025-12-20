@@ -12,7 +12,7 @@ const app: Application = express();
 
 export const corsOptions = {
   origin: [
-    'https://fastfix-client.vercel.app', // Frontend link
+    'https://trainer-hub-client.vercel.app',
     'http://localhost:3000',
     'http://localhost:3001',
   ],
