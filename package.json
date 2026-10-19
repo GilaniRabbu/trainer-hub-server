@@ -1,5 +1,5 @@
 {
-  "name": "fast-fix-server",
+  "name": "trainer-hub-server",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
@@ -82,5 +82,8 @@
     "stripe": "^17.3.0",
     "uuid": "^10.0.0",
     "zod": "^3.23.8"
+  },
+  "allowScripts": {
+    "bcrypt@5.1.1": true
   }
 }
